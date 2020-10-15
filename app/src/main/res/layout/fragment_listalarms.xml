@@ -35,6 +35,16 @@
             android:layout_gravity="bottom"
             android:text="Add Alarm"
             app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/deleted_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="48dp"
+            android:text="Deleted Alarm "
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

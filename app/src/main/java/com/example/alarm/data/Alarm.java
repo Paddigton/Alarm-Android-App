@@ -186,6 +186,14 @@ public class Alarm {
         Log.i("cancel", toastText);
     }
 
+    public void deletedAlarm(Context context){
+        AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, AlarmBroadcastReceiver.class);
+        PendingIntent alarmPendingIntent = PendingIntent.getBroadcast(context, alarmId, intent, 0);
+        alarmManager.cancel(alarmPendingIntent);
+        this.started = false;
+    }
+
     public String getRecurringDaysText() {
         if (!recurring) {
             return null;

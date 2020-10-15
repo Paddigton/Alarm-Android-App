@@ -14,7 +14,7 @@ public interface AlarmDao {
     void insert(Alarm alarm);
 
     @Query("DELETE FROM alarm_table")
-    int deleteAll();
+    void deleteAll();
 
     @Query("SELECT * FROM alarm_table ORDER BY created ASC")
     LiveData<List<Alarm>> getAlarms();

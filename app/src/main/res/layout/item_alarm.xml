@@ -56,6 +56,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
+            <CheckBox
+                android:id="@+id/checkbox_deleted_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
